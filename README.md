@@ -12,6 +12,10 @@ This project showcases advanced programming concepts including multithreading, d
 
 ### Decompression in Action
 ![Decompression Example](Image2.png)
+
+### Compression Ratio
+![Ratio](CompressionRatio.png)
+
 ---
 
 ## 🚀 Key Features
