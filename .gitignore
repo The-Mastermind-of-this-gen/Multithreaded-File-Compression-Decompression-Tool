@@ -1,0 +1,23 @@
+# Compiled binary
+compress_mt
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# Backup files
+*~
+*.bak
+
+# Temporary files
+*.log
+*.tmp
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
