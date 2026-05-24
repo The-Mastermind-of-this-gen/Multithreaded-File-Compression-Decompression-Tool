@@ -46,12 +46,14 @@ Works seamlessly on Linux, WSL, and other Unix-like systems with POSIX threads s
 
 📂 **Directory Support**  
 Recursively compress entire folders with multithreaded efficiency.
+
 ## 🌟 Why This Project Stands Out
 
 ♠️ Demonstrates low-level C++ mastery with threads, synchronization, and system calls.  
 ♥️ Implements real-world algorithms (Huffman tree, hash maps) for maximum performance.  
 ♦️ Provides interactive user experience with progress tracking (rare in basic compressors).  
 ♣️ Scalable: works on small text files, massive datasets, and full directories.  
+
 ## 🔧 Build Instructions
 
 ```bash
@@ -62,6 +64,9 @@ cd compression-tool
 # Build (requires g++ with C++17 and pthread support)
 g++ -std=c++17 -pthread -O2 main.cpp -o compressor
 ```
+
+> ⚠️ **Note:** Windows native build is not yet tested. Recommended to use WSL or Linux.
+
 ##📖 Usage
 
 ```bash
@@ -74,12 +79,14 @@ g++ -std=c++17 -pthread -O2 main.cpp -o compressor
 # Compress entire directory with 8 threads & 1MB blocks
 ./compressor my_folder -t 8 -b 1048576
 ```
+
 ## ⚙️ Command-Line Options
 
 - `-t <threads>` → Number of threads (**default:** 4)  
 - `-b <block_size>` → Block size in bytes (**default:** 65536)  
 
 ✅ Accepts both files and directories.  
+
 ## 📊 Example Output
 
 [###------] 42% | Speed: 512 KB/s | ETA: 00:13
@@ -107,6 +114,21 @@ g++ -std=c++17 -pthread -O2 main.cpp -o compressor
 - **POSIX Threads (pthreads)** → multithreading support  
 - **Huffman Coding** → data compression algorithm  
 
+---
+
+## 🗺️ Roadmap / TODO
+
+Features planned for future releases:
+
+- [ ] **GUI Frontend** – A graphical interface (likely Qt or GTK) so users can drag-and-drop files instead of using the CLI
+- [ ] **Encryption support** – Optional AES encryption layer on top of compression
+- [ ] **Benchmark mode** – Compare compression ratio and speed across different block sizes automatically
+- [ ] **Windows native support** – Replace pthreads with `std::thread` for full cross-platform compatibility
+- [ ] **Config file** – Allow saving default thread count and block size preferences to a config file instead of passing CLI flags every time
+
+> Contributions toward any of the above are especially welcome!
+
+---
 
 ## 🧑‍💻 Author
 
